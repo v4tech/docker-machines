@@ -15,6 +15,7 @@ RUN sed -i "s/http:\/\/archive.ubuntu.com\/ubuntu\//http:\/\/mirror.internode.on
             git \
             nano \
             tmux \
+            unzip \
             wget \
             zsh && \
     rm -rf /var/lib/apt/lists/*
