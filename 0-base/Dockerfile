@@ -12,6 +12,7 @@ RUN sed -i "s/http:\/\/archive.ubuntu.com\/ubuntu\//http:\/\/mirror.internode.on
     apt-get install -y \
             ca-certificates \
             curl \
+            file \
             git \
             nano \
             tmux \
