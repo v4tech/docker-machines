@@ -1,0 +1,19 @@
+# List of packages that I want installed in my dev machine
+anaconda-client
+ipykernel
+ipython
+ipywidgets
+matplotlib
+notebook
+numpy
+pandas
+pep8
+pyflakes
+scipy
+# These are some nice additional ones
+Quandl
+cvxopt
+imaplib2
+zipline
+pweave
+django

@@ -1,4 +1,10 @@
 # My base box
+#
+# N.B. As this is a base box it is NOT the smallest image size.
+#      Clean it up by the commented out commands below...
+#   OR
+#      Run one of the prod containers
+
 FROM debian:jessie
 MAINTAINER Stewart V. Wright <stewart@vifortech.com>
 
@@ -18,21 +24,27 @@ RUN sed -i "s/http:\/\/archive.ubuntu.com\/ubuntu\//http:\/\/mirror.internode.on
             tmux \
             unzip \
             wget \
-            zsh && \
-    rm -rf /var/lib/apt/lists/*
+            zsh
 
 
 # Change the shell to using zsh
 RUN chsh -s /bin/zsh root
 
-# Clean up to make the image smaller
-RUN for x in `ls /usr/share/locale | grep -v -i en | grep -v -i local`; \
-      do rm -fr /usr/share/locale/$x; \
-    done && \
-    rm -fr /usr/share/locale/ca* \
-        /usr/share/locale/den \
-        /usr/share/locale/men \
-        /usr/share/locale/wen \
-        /usr/share/locale/zen
-
 CMD ["/bin/zsh"]
+
+
+
+###############################
+# Clean up to make the image smaller by running these if you like...
+#RUN apt-get clean && \
+#    rm -rf /var/lib/apt/lists/*
+#
+#RUN for x in `ls /usr/share/locale | grep -v -i en | grep -v -i local`; \
+#      do rm -fr /usr/share/locale/$x; \
+#    done && \
+#    rm -fr /usr/share/locale/ca* \
+#        /usr/share/locale/den \
+#        /usr/share/locale/men \
+#        /usr/share/locale/wen \
+#        /usr/share/locale/zen
+###############################

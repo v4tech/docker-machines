@@ -1,0 +1,4 @@
+channels:
+- defaults
+- auto
+- Quantopian
