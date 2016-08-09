@@ -19,7 +19,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     rm ${CONDA_INSTALLER} && \
     /opt/conda/bin/conda install --yes conda && \
     conda install conda-build && \
-    conda remove tk --yes && \
     conda clean --yes --tarballs --packages --source-cache && \
     find /opt/conda \
       \( -type d -a -name test -o -name tests \) \
