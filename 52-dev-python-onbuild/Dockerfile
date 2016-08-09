@@ -1,4 +1,4 @@
-FROM v4tech/dev-python
+FROM v4tech/dev-python:latest
 MAINTAINER Stewart V. Wright <stewart@vifortech.com>
 
 # These commands run when a new image is built
