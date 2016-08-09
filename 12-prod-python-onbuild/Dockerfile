@@ -1,4 +1,4 @@
-FROM v4tech/prod:python
+FROM v4tech/prod-python:latest
 MAINTAINER Stewart V. Wright <stewart@vifortech.com>
 
 # These commands run when a new image is built
