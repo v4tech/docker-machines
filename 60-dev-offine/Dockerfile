@@ -51,5 +51,5 @@ RUN rm -rf /opt/conda  \
         r-essentials  \
         r-xts  \
         r-shiny  \
-        r-readxl
+        r-readxl  \
     && /opt/conda/bin/conda clean --yes --tarballs --packages --source-cache
