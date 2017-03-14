@@ -45,6 +45,7 @@ RUN rm -rf /opt/conda  \
         pyflakes  \
         pymc  \
         quandl  \
+        rpy2  \
         scipy  \
         spacy  \
         r  \
