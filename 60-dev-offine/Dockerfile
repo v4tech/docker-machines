@@ -19,7 +19,7 @@ RUN rm -rf /opt/conda  \
     && rm ${ANACONDA_INSTALLER}  \
     && /opt/conda/bin/conda config --append channels r  \
     && /opt/conda/bin/conda upgrade --yes --all  \
-    && /opt/conda/bin/conda install --yes  \
+    && /opt/conda/bin/conda install --yes -c r  \
         anaconda-client  \
         boost  \
         boto3  \
@@ -53,4 +53,5 @@ RUN rm -rf /opt/conda  \
         r-xts  \
         r-shiny  \
         r-readxl  \
+        r-rsqlite  \
     && /opt/conda/bin/conda clean --yes --tarballs --packages --source-cache
