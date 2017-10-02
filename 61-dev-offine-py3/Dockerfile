@@ -26,7 +26,6 @@ RUN rm -rf /opt/conda  \
         botocore  \
         conda-build  \
         coverage  \
-        cvxcanon  \
         cvxopt  \
         feedparser  \
         flake8  \
