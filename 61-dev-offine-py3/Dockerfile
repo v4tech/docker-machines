@@ -30,9 +30,6 @@ RUN rm -rf /opt/conda  \
         feedparser  \
         flake8  \
         future  \
-        gdata  \
-        googlecl  \
-        icalendar  \
         ipykernel  \
         ipython  \
         ipywidgets  \
